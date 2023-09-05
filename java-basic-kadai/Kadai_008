@@ -1,1 +1,24 @@
+package kadai_008;
 
+public class Price_Chapter08 {
+
+	public static void main(String[] args) {
+		
+		int userAge = 30; //年代
+		
+		switch(userAge) {
+			case 10 -> 
+				System.out.println( userAge + "代の料金は1000円です");
+			case 20 -> 
+				System.out.println( userAge + "代の料金は2000円です");
+			case 30, 40 ->
+				System.out.println( userAge + "代の料金は3000円です");
+			case 50, 60, 70 ->
+				System.out.println( userAge + "代の料金は4000円です");
+			case 80 ->
+				System.out.println( userAge + "代の料金は5000円です");
+			default ->
+				System.out.println("当てはまらない年代は500円です");
+		}
+	}
+}
